@@ -1,0 +1,16 @@
+Con este script se consigue el acceso
+
+https://github.com/calc1f4r/SSH-Bruteforcer.git
+
+pip3 install -r requirements.txt 
+
+python3 multithreaded-ssh-bruteforcer.py -p 2222 127.0.0.1 -w wordlist.txt -u abr -t 2
+
+El usuario es abr
+
+en /tmp hay un fichero .zip con contraseña
+
+se descarga y se realiza un ataque de fuerza bruta
+
+existe un diccionario pequeño que la última palabra es la contraseña de root
+
