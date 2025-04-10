@@ -27,7 +27,7 @@ RUN echo "root:p@ssw0rd" | chpasswd
 RUN usermod -aG sudo abr
 
 # Configurar sudo para permitir a abr ejecutar vim sin contraseña
-RUN echo "abr ALL=(ALL) NOPASSWD: /usr/bin/vim" >> /etc/sudoers
+# RUN echo "abr ALL=(ALL) NOPASSWD: /usr/bin/vim" >> /etc/sudoers
 
 # Crear archivo user.txt en el home del usuario abr
 RUN echo "CTF_ABR{BruT3_F0rc3_F0R_C4m3_1N}" > /home/abr/user.txt
